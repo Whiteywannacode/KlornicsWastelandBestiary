@@ -1,0 +1,1390 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "KlornicsWastelandBestiary",
+				"abbreviation": "CERN",
+				"full": "Klornic's Wasteland Bestiary",
+				"url": "",
+				"authors": [
+					"Billy McGee"
+				],
+				"convertedBy": [
+					"Billy McGee"
+				],
+				"color": "#25ba32",
+				"edition": "classic"
+			}
+		],
+		"dateAdded": 1795148229,
+		"dateLastModified": 1795148229,
+		"edition": "classic"
+	},
+	"feat": [{
+			"name": "Klornic's Draconic Fury",
+			"source": "KlornicsWastelandBestiary",
+			"page": 87,
+			"type": "feat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn (Kekmyr)",
+							"subtype": [
+								"Kekmyr"
+							]
+						}
+					],
+					"level": 8
+				}
+			],
+			"entries": [
+				"{@i Klornic spends a bonus action and becomes enveloped in the emerald energy he usually sports mixed with his echo knight energy, as his horns grow and he loses control...}",
+				"While transformed, Klornic gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Klornic's Strength increases by +2 to a maximum of 22.",
+						"Klornic's armor class increases by +1.",
+						"Klornic's gains half his current hit dice ({@dice 5d10 + #$prompt_number:min=1, title=Enter Klornic's Constitution Modifier!, default=1$#}) as Temporary hit points.",
+						"Klornic's melee attacks deal an additional 1d6 damage of the same type as the weapon used.",
+						"Klornic's movement speed increases by 15 feet.",
+						"Klornic gains a fly speed of equal to his movement speed.",
+						"Klornic's unarmed strikes deal 1d6 + Klornic's Strength modifier ({@damage 1d6 + #$prompt_number:min=1,title=Enter Klornic's Strength Modifier!,default=1$#}) bludgeoning damage."
+					]
+				},
+{
+				"type": "inset",
+				"name": "Unarmed Extra Attack",
+				"entries": [
+					"{@i While transformed your draconic instinct takes over and weapons just get in the way...}",
+					"If Klornic uses only unarmed attacks as part of his {@action attack|xphb} action, he gains an additional melee attack as part of that {@action attack|xphb} action."
+				]
+				},
+		{
+			"type": "inset",
+			"name": "Lightning Fast Reflexes",
+			"entries": [
+				"{@i While transformed your body becomes your greatest weapon…}",
+				"As a reaction when you are hit by an attacker, you can see, within melee range you may make two unarmed attacks against them. If either of these attacks hit, your AC is increased by +1 until your next turn. "
+			]
+		},
+		"This Transformation can last 30 seconds (6 rounds)  without fault, after that each round requires a…",
+		{
+			"type": "inset",
+			"name": "Transformation Saving Throw",
+			"entries": [
+				"{@dc 15 + [The number of rounds past 6]} Constitution saving throw or the transfomation ends.",
+				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
+				"{@b After this transformation ends Klornic accumulates two levels of {@condition exhaustion}.}"
+			]
+		}
+			]
+	},
+	{
+		"name": "Klornic's Draconic Potency",
+			"source": "KlornicsWastelandBestiary",
+			"page": 87,
+			"type": "feat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn (Kekmyr)",
+							"subtype": [
+								"Kekmyr"
+							]
+						}
+					],
+					"level": 10,
+					"feat": [
+						"Klornic's Draconic Fury|KlornicsWastelandBestiary"
+					]
+				}
+			],	
+			"entries": [
+				"{@i While Transformed Klornic spends an action and becomes enveloped in new chromatic energy, he enters a state of unwieldy draconic power taking {@damage 1d8||Psychic Damage} psychic damage...}",
+				"While transformed in this way, Klornic gains these additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Klornic's unarmed strikes are considered magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.",
+						"Klornic's gains twice his proficiency bonus to his {@variantrule Passive Perception|xphb} score.",
+						"When Klornic rolls damage for an unarmed attack if he rolls below a 4, he counts it as a 4 instead."
+					]
+				},
+				"This transformation can be used multiple times, each time it is used...",
+				{
+					"type": "list",
+					"items": [
+						"The minimum damage Klornic can roll on unarmed attacks increases by one to its maximum."
+					]
+				},
+				"{@b {@i This transformation comes with the following detriments:}}",
+				{
+					"type": "list",
+					"items": [
+						"When Klornic ends his turn with Draconic Potency active, he takes {@damage 2d8||Psychic Damage} psychic damage.",
+						"This increases by 2d8 for each time potency is used."
+					]
+				},
+		"Transformations can last 30 seconds (6 rounds)  without fault, after that each round requires a…",
+		{
+			"type": "inset",
+			"name": "Potent Transformation Saving Throw",
+			"entries": [
+				"{@dc 15 + [The number of rounds past 6]+ [The number of time Draconic Potency has been used]} Constitution saving throw or the transfomation ends.",
+				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
+				"{@b After this transformation ends Klornic accumulates three levels of {@condition exhaustion} instead of 2.}"
+			]
+		}
+			]	
+	},
+	{
+		"name": "Klornic's Draconic Rage",
+			"source": "KlornicsWastelandBestiary",
+			"page": 87,
+			"type": "feat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn (Kekmyr)",
+							"subtype": [
+								"Kekmyr"
+							]
+						}
+					],
+					"level": 12,
+					"feat": [
+						"Klornic's Draconic Fury|KlornicsWastelandBestiary"
+					]
+				}
+			],
+
+			"entries": [			
+				"{@i Klornic's Aura becomes more turbulent and his horn grow larger.}",
+				"While in Draconic Fury after level 12 Klornic can push himself using an action to unlock Draconic Rage.",
+				"Entering Draconic Rage will cost a bonus action after the first time.",
+				"While transformed in this way, Klornic gains these additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Klornic's Strength and Dexterity increase by an additional +1 to a maximum of 22.",
+						"Klornic's armor class increases by an additional +1.",
+						"Klornic's movement speed increases by an additional 10 feet.",
+						"Klornic's unarmed strikes now deal 1d8 + Klornic's Strength modifier ({@damage 1d8 + #$prompt_number:min=1,title=Enter Klornic's Strength Modifier!,default=1$#}) bludgeoning damage.",
+						"Klornic gains access to the {@spell Psionic Bolts|KlornicsWastelandBestiary} cantrip while transformed.",
+						"Klornic gains access to the {@spell Draconic Lance|KlornicsWastelandBestiary} spell a number of times equal to his proficiency bonus while transformed."
+					]
+				},
+				"Transformations can last 30 seconds (6 rounds)  without fault, after that each round requires a…",
+		{
+			"type": "inset",
+			"name": "Transformation Saving Throw",
+			"entries": [
+				"{@dc 16 + [The number of rounds past 6]} Constitution saving throw or the transfomation ends.",
+				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
+				"{@b After this transformation ends Klornic accumulates two levels of {@condition exhaustion}.}"
+			]
+		}
+			]	
+	},
+		{
+		"name": "Klornic's Draconic Valor",
+			"source": "KlornicsWastelandBestiary",
+			"page": 87,
+			"type": "feat",
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "Dragonborn (Kekmyr)",
+							"subtype": [
+								"Kekmyr"
+							]
+						}
+					],
+					"level": 16,
+					"feat": [
+						"Klornic's Draconic Rage|KlornicsWastelandBestiary"
+					]
+				}
+			],
+
+			"entries": [			
+				"{@i Klornic's Aura becomes more turbulent and his horn grow larger.}",
+				"While in Draconic Fury after level 12 Klornic can push himself using an action to unlock Draconic Rage.",
+				"Entering Draconic Rage will cost a bonus action after the first time.",
+				"While transformed in this way, Klornic gains these additional benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Klornic's Strength and Dexterity increase by an additional +1 to a maximum of 22.",
+						"Klornic's armor class increases by an additional +1.",
+						"Klornic's movement speed increases by an additional 10 feet.",
+						"Klornic's unarmed strikes now deal 1d8 + Klornic's Strength modifier ({@damage 1d8 + #$prompt_number:min=1,title=Enter Klornic's Strength Modifier!,default=1$#}) bludgeoning damage.",
+						"Klornic gains access to the {@spell Psionic Bolts|KlornicsWastelandBestiary} cantrip while transformed.",
+						"Klornic gains access to the {@spell Draconic Lance|KlornicsWastelandBestiary} spell a number of times equal to his proficiency bonus while transformed."
+					]
+				},
+				"Transformations can last 30 seconds (6 rounds)  without fault, after that each round requires a…",
+		{
+			"type": "inset",
+			"name": "Transformation Saving Throw",
+			"entries": [
+				"{@dc 16 + [The number of rounds past 6]} Constitution saving throw or the transfomation ends.",
+				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
+				"{@b After this transformation ends Klornic accumulates two levels of {@condition exhaustion}.}"
+			]
+		}
+			]	
+	}
+	],
+	"spell": [ 
+		{
+	"name": "Psionic Bolts",
+	"source": "KlornicsWastelandBestiary",
+	"page": 267,
+	"srd52": false,
+	"basicRules2024": false,
+	"level": 0,
+	"school": "Evocation",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"Klornic creates two bolts of psionic energy that he can hurl at targets within range. Make a {@dice 2d20 + #$prompt_number:min=0,title=Enter Klornic' Dexterity Modifier!,default=0$#;3d20 + #$prompt_number:min=0,title=Enter Klornic' Dexterity Modifier!,default=0$#;4d20 + #$prompt_number:min=0,title=Enter Klornic' Dexterity Modifier!,default=0$#;5d20 + #$prompt_number:min=0,title=Enter Klornic' Dexterity Modifier!,default=0$#|Ranged Spell Attack (DEX) |Psionic Bolts}for each bolt. On a hit, the target takes {@damage 1d6 + #$prompt_number:min=0,title=Enter Klornic's Constitution Modifier!,default=0$#} psychic damage."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "Cantrip Upgrade",
+			"entries": [
+				"Klornic creates three bolts at level 13, four bolts at level 15, and five bolts at level 17. He can direct the bolts at the same target or at different ones and makes a separate attack roll for each bolt."
+			]
+		}
+	],
+	"damageInflict": [
+		"psychic"
+	],
+	"spellAttack": [
+		"R"
+	],
+	"miscTags": [
+		"SCL"
+	],
+	"areaTags": [
+		"MT",
+		"ST"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock",
+				"source": "XPHB"
+			},
+			{
+				"name": "Warlock",
+				"source": "WoW",
+				"definedInSource": "WoW"
+			}
+		]
+	}
+	},
+			{
+	"name": "Draconic Lance",
+	"source": "KlornicsWastelandBestiary",
+	"page": 267,
+	"srd52": false,
+	"basicRules2024": false,
+	"level": 3,
+	"school": "Evocation",
+	"save": {
+		"ability": "dex"
+	},
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "5-foot line",
+			"amount": "120 feet,"
+		}
+	},
+	"components": {
+		"s": true,
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"A 5-ft wide beam of crackling energy erupts from Klornics's mouth out to a range of 120 ft. each creature caught in this beam must make a Dexterity Saving Throw or take {@dice 4d8} damage of a type he chooses from fire, lightning, cold, poison, acid or psychic damage on a failed save, and no damage on a successful save."
+	],
+	"damageInflict": [
+		"acid",
+		"cold",
+		"fire",
+		"lightning",
+		"poison",
+		"psychic"
+	],
+	"spellAttack": [
+		"R"
+	],
+	"miscTags": [
+		"SCL"
+	],
+	"areaTags": [
+		"MT",
+		"ST"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Warlock",
+				"source": "XPHB"
+			},
+			{
+				"name": "Warlock",
+				"source": "WoW",
+				"definedInSource": "WoW"
+			}
+		]
+	}
+	}
+	],
+	"monster": [
+		{
+			"name": "Adult Hunter Wasp",
+			"shortName": "Hunter Wasps",
+			"source": "KlornicsWastelandBestiary",
+			"page": 67,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mutated Insect"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 20",
+				"average": 47
+			},
+			"speed": {
+				"walk": 5,
+				"fly": {
+					"number": 100,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 5,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"dex": "+7",
+				"con": "+6",
+				"wis": "+5"
+			},
+			"skill": {
+				"stealth": "+7",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"frightened"
+					]
+				},
+				{
+					"conditionImmune": [
+						"poisoned"
+					]
+				}
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The hunter wasp doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the hunter wasp can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The hunter wasp has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hunter wasp makes two attacks."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) piercing damage. A target must succeed a {@dc 14} Constitution saving throw or its hit point maximum is reduced by half the damage taken. This reduction lasts until a long rest is completed. If a creature is reduced to zero hit points by this attack they die instantly."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"traitTags": [
+				"Aggressive",
+				"Flyby"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Adult Hunter Wasp (1)",
+			"shortName": "Hunter Wasps",
+			"source": "KlornicsWastelandBestiary",
+			"page": 67,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Mutated Insect"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d10 + 20",
+				"average": 47
+			},
+			"speed": {
+				"walk": 5,
+				"fly": {
+					"number": 100,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 5,
+			"wis": 15,
+			"cha": 11,
+			"save": {
+				"dex": "+7",
+				"con": "+6",
+				"wis": "+5"
+			},
+			"skill": {
+				"stealth": "+7",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"frightened"
+					]
+				},
+				{
+					"conditionImmune": [
+						"poisoned"
+					]
+				}
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Flyby",
+					"entries": [
+						"The hunter wasp doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the hunter wasp can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The hunter wasp has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hunter wasp makes two attacks."
+					]
+				},
+				{
+					"name": "Mandible",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) piercing damage. A target must succeed a {@dc 14} Constitution saving throw or its hit point maximum is reduced by half the damage taken. This reduction lasts until a long rest is completed. If a creature is reduced to zero hit points by this attack they die instantly."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"traitTags": [
+				"Aggressive",
+				"Flyby"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Blind Ruffhide (Deathclaw)",
+			"shortName": "Ruffhide",
+			"source": "KlornicsWastelandBestiary",
+			"page": 100,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Abomination"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 50",
+				"average": 115
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 10,
+				"climb": 25
+			},
+			"str": 19,
+			"dex": 22,
+			"con": 18,
+			"int": 7,
+			"wis": 22,
+			"cha": 1,
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+14"
+			},
+			"senses": [
+				"tremorsense 50 ft.",
+				"blindsight 30 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				},
+				{
+					"resist": [
+						"fire",
+						"force",
+						"lightning",
+						"thunder"
+					]
+				}
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"languages": [
+				"understands Common",
+				"cannot speak except in growls"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Mimicry (Ruffhide)",
+					"entries": [
+						"The ruffhide can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the ruffhide can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Standing Leap (Ruffhide)",
+					"entries": [
+						"The ruffhide's long jump is up to 20 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the ruffhide can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The ruffhide has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				},
+				{
+					"name": "Pounce (Ruffhide)",
+					"entries": [
+						"If the ruffhide moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the ruffhide can attempt to grapple it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ruffhide makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d12 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses",
+				"Pounce",
+				"Reckless"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Geed the Greediest Kobold",
+			"shortName": "Geed",
+			"isNamedCreature": true,
+			"source": "KlornicsWastelandBestiary",
+			"page": 69,
+			"level": 8,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "Dragon,",
+				"tags": [
+					"Kobold",
+					{
+						"tag": "Bard",
+						"prefix": "College of Lore,"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8",
+				"average": 24
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 6,
+			"dex": 15,
+			"con": 10,
+			"int": 8,
+			"wis": 7,
+			"cha": 14,
+			"save": {
+				"dex": "+4",
+				"cha": "+4"
+			},
+			"skill": {
+				"persuasion": "+2",
+				"performance": "+2",
+				"survival": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"languages": [
+				"Common",
+				"Draconic",
+				"Waste"
+			],
+			"pbNote": "3",
+			"spellcasting": [
+				{
+					"name": "Geed's Bardic Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Geed is a 3rd level, College of Lore, Bard his spell save {@dc 12} and his spell attack bonus +4.  "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mending}",
+								"{@spell vicious mockery}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell Tasha's hideous laughter}",
+								"{@spell unseen servant}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell gift of gab|AI}"
+							],
+							"slots": 2
+						}
+					}
+				}
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"Geed has advantage on an attack roll against a creature if at least one of Geed's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, Geed has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Song of Rest (D6)",
+					"entries": [
+						"{@classFeature Song of Rest (D6)|Bard|PHB|2|PHB| Preety Preety Muzak!}"
+					]
+				},
+				{
+					"name": "Jack of All Trades",
+					"entries": [
+						"{@classFeature Jack of All Trades|Bard|PHB|2|PHB| Geed is gud at tings...}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Bardic Inspiration",
+					"entries": [
+						"{@classFeature Bardic Inspiration|Bard||1|| I's wink at ya!}"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Cutting Words",
+					"entries": [
+						"{@subclassFeature Cutting words | Bard | PHB | Lore | PHB | 3 | PHB | Git Fucked M8!}"
+					]
+				}
+			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"Geed is 3ft 2 inches tall."
+				]
+			}
+		},
+		{
+			"name": "Ruffhide (Deathclaw)",
+			"shortName": "Ruffhide",
+			"source": "KlornicsWastelandBestiary",
+			"page": 100,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Abomination"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d12 + 50",
+				"average": 115
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 10,
+				"climb": 25
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 20,
+			"int": 7,
+			"wis": 18,
+			"cha": 1,
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"skill": {
+				"athletics": "+8"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				},
+				{
+					"resist": [
+						"fire",
+						"force",
+						"lightning",
+						"thunder"
+					]
+				}
+			],
+			"languages": [
+				"understands Common",
+				"cannot speak except in growls"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Mimicry (Ruffhide)",
+					"entries": [
+						"The ruffhide can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the ruffhide can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Standing Leap (Ruffhide)",
+					"entries": [
+						"The ruffhide's long jump is up to 20 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the ruffhide can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The ruffhide has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				},
+				{
+					"name": "Pounce (Ruffhide)",
+					"entries": [
+						"If the ruffhide moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the ruffhide can attempt to grapple it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ruffhide makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d12 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses",
+				"Pounce",
+				"Reckless"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Young Ruffhide (Deathclaw)",
+			"shortName": "Ruffhide",
+			"source": "KlornicsWastelandBestiary",
+			"page": 100,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"Abomination"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d12 + 20",
+				"average": 52
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 10,
+				"climb": 25
+			},
+			"str": 18,
+			"dex": 20,
+			"con": 18,
+			"int": 3,
+			"wis": 16,
+			"cha": 1,
+			"save": {
+				"str": "+8",
+				"con": "+8"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				},
+				{
+					"resist": [
+						"fire",
+						"force",
+						"lightning",
+						"thunder"
+					]
+				}
+			],
+			"conditionImmune": [
+				"blinded"
+			],
+			"languages": [
+				"understands Common",
+				"cannot speak except in growls"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Mimicry (Ruffhide)",
+					"entries": [
+						"The ruffhide can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 12} Wisdom ({@skill Insight}) check."
+					]
+				},
+				{
+					"name": "Aggressive",
+					"entries": [
+						"As a bonus action, the ruffhide can move up to its speed toward a hostile creature that it can see."
+					]
+				},
+				{
+					"name": "Standing Leap (Ruffhide)",
+					"entries": [
+						"The ruffhide's long jump is up to 20 feet and its high jump is up to 15 feet, with or without a running start."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+					]
+				},
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The ruffhide has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the ruffhide can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The ruffhide has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				},
+				{
+					"name": "Pounce (Ruffhide)",
+					"entries": [
+						"If the ruffhide moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the ruffhide can attempt to grapple it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ruffhide makes two attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}19 ({@damage 4d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}24 ({@damage 3d12 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses",
+				"Pounce",
+				"Reckless"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		}
+	]
+}
