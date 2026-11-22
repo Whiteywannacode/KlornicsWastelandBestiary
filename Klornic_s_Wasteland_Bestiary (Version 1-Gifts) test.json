@@ -133,7 +133,7 @@
 			"type": "inset",
 			"name": "Potent Transformation Saving Throw",
 			"entries": [
-				"{@dc 15 + [The number of rounds past 6]+ [The number of time Draconic Potency has been used]} Constitution saving throw or the transfomation ends.",
+				"{@dc 15 + [The number of rounds past 6] + [The number of time Draconic Potency has been used]} Constitution saving throw or the transfomation ends.",
 				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
 				"{@b After this transformation ends Klornic accumulates three levels of {@condition exhaustion} instead of 2.}"
 			]
@@ -164,8 +164,8 @@
 
 			"entries": [			
 				"{@i Klornic's Aura becomes more turbulent and his horn grow larger.}",
-				"While in Draconic Fury after level 12 Klornic can push himself using an action to unlock Draconic Rage.",
-				"Entering Draconic Rage will cost a bonus action after the first time.",
+				"While in Draconic Fury after reaching level 12 Klornic can push himself using an action to unlock Draconic Rage.",
+				"Entering {@feat Klornic's Draconic Rage|KlornicsWastelandBestiary|Draconic Rage} will cost a bonus action after the first time.",
 				"While transformed in this way, Klornic gains these additional benefits:",
 				{
 					"type": "list",
@@ -213,19 +213,42 @@
 			],
 
 			"entries": [			
-				"{@i Klornic's Aura becomes more turbulent and his horn grow larger.}",
-				"While in Draconic Fury after level 12 Klornic can push himself using an action to unlock Draconic Rage.",
-				"Entering Draconic Rage will cost a bonus action after the first time.",
-				"While transformed in this way, Klornic gains these additional benefits:",
+				"{@i Klornic's head becomes enlarged as do his tail, claws and teeth...}",
+				"While transformed into {@feat Klornic's Draconic Rage|KlornicsWastelandBestiary|Draconic Rage} after reaching 16th level Klornic can push himself even further using his full turn.",
+				"Entering {@feat Klornic's Draconic Valor|KlornicsWastelandBestiary|Draconic Valor} will cost a bonus action after the first time.",
+				"While transformed in this way, Klornic gains the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Klornic's Strength and Dexterity increase by an additional +1 to a maximum of 22.",
-						"Klornic's armor class increases by an additional +1.",
-						"Klornic's movement speed increases by an additional 10 feet.",
-						"Klornic's unarmed strikes now deal 1d8 + Klornic's Strength modifier ({@damage 1d8 + #$prompt_number:min=1,title=Enter Klornic's Strength Modifier!,default=1$#}) bludgeoning damage.",
-						"Klornic gains access to the {@spell Psionic Bolts|KlornicsWastelandBestiary} cantrip while transformed.",
-						"Klornic gains access to the {@spell Draconic Lance|KlornicsWastelandBestiary} spell a number of times equal to his proficiency bonus while transformed."
+						"Klornic's Strength increases by +3 and his Dexterity increases by +1 to a maximum of 26.",
+						"Klornic becomes {@variantrule resistance|xphb|resistant} to nonmagical bludgeoning, piercing, and slashing damage and fire, cold, lightning, acid, poison and psychic damage.",
+						"Klornic's movement speed doubles",
+						"Klornic's unarmed strikes now deal 1d12 + Klornic's Strength modifier ({@damage 1d12 + #$prompt_number:min=1,title=Enter Klornic's Strength Modifier!,default=1$#}) bludgeoning or slashing damage.",
+						"Klornic doubles his {@table proficiency bonus|xphb} when determining the number of times he can cast the spell {@spell Draconic Lance|KlornicsWastelandBestiary} while transformed."
+					]
+				},
+				{
+				"type": "inset",
+				"name": "Unstoppable Might",
+				"entries": [
+					"{@i For a moment Klornic gains control of his power and aims it at a single target...}",
+					"While tranformed into {@feat Klornic's Draconic Valor|KlornicsWastelandBestiary|Draconic Valor}, Klornic chooses a target, when he makes a successful unarmed attack against that target, he may attack that target again. If he misses an unarmed attack on the target, he ends his attack action and cant use this ability until he finishes a long rest."
+				]					
+				},
+				{
+				"type": "inset",
+				"name": "Draconic Transmission",
+				"entries": [
+					"{@i With this much of Cormyr’s power flowing through Klornic, it feels as if he can bend space itself to his whims...}",
+					"While tranformed into {@feat Klornic's Draconic Valor|KlornicsWastelandBestiary|Draconic Valor}, a number of times a day equal to his {@table proficiency bonus|xphb}, Klornic can teleport to a space he can see within 300 feet.",
+					"When an enemy hits Klornic with an attack, he can use his reaction to teleport behind them and use his {@feat Klornic's Draconic Fury|KlornicsWastelandBestiary|Lightning Fast Reflexes} ability. This costs one use of his {@feat Klornic's Draconic Valor|KlornicsWastelandBestiary|Draconic Transmission}."
+				]					
+				},
+				"{@b {@i This transformation comes with the following Detriments:}}",
+				{
+					"type": "list",
+					"items": [
+						"When Klornic ends his turn with {@feat Klornic's Draconic Valor|KlornicsWastelandBestiary|Draconic Valor} active he must make a {@dc 25} Constitution saving throw or he takes {@damage 8d8||Fire Damage} fire damage, {@i as his soul begins to burn from within...}"
 					]
 				},
 				"Transformations can last 30 seconds (6 rounds)  without fault, after that each round requires a…",
@@ -233,9 +256,9 @@
 			"type": "inset",
 			"name": "Transformation Saving Throw",
 			"entries": [
-				"{@dc 16 + [The number of rounds past 6]} Constitution saving throw or the transfomation ends.",
+				"{@dc 17 + [The number of rounds past 6]} Constitution saving throw or the transfomation ends.",
 				"{@b Any Transformation ends if you become {@condition incapacitated} or {@condition unconscious}.}",
-				"{@b After this transformation ends Klornic accumulates two levels of {@condition exhaustion}.}"
+				"{@b After this transformation ends Klornic accumulates four levels of {@condition exhaustion}.}"
 			]
 		}
 			]	
